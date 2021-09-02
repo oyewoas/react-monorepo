@@ -9,7 +9,7 @@ export default {
 
 const Template: Story<ButtonProps> = (args) => <ThemeProvider><Button {...args}>Button</Button></ThemeProvider>;
 
-export const Primary = Template.bind({});
-Primary.args = {
-  shape: 'circle',
+export const ButtonComponent = Template.bind({});
+ButtonComponent.args = {
+  shape: 'standard',
 };
