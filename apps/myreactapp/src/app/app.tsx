@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 import { ReactComponent as Logo } from './logo.svg';
 import star from './star.svg';
+import { Button, ThemeProvider } from '@mynxorg/ui'
 
 const StyledApp = styled.div`
   font-family: sans-serif;
@@ -134,6 +135,7 @@ const StyledApp = styled.div`
 
 export function App() {
   return (
+    <ThemeProvider>
     <StyledApp>
       <header className="flex">
         <Logo width="75" height="75" />
@@ -222,8 +224,10 @@ nx affected:test
 nx affected:e2e
   `}</pre>
         </details>
+        <Button>Styled button using UI Library</Button>
       </main>
     </StyledApp>
+    </ThemeProvider>
   );
 }
 
